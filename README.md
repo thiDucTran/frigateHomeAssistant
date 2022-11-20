@@ -13,6 +13,8 @@ Fulfilled and TODO requirements for the chosen solution
 Good read: `Frigate`'s [recommended hardware](https://docs.frigate.video/hardware) link. Personally, [`PoE`](https://www.samsara.com/guides/poe-security-camera/) adoption for any hardware that you choose is really a time-saver.
 
 Ultimately, this section would help you decide on what to buy and how much the cost would be.
+
+FINALLY, please note that my setup **only has 1 camera**; so beef things up if necessary for your case.
 ## 2.1 Cameras
 As recommended from the link above, I went with the [`Loryta(Dahua) T5442TM-AS-LED`](https://amzn.to/3uFLtxB)
 ## 2.2 Power
@@ -54,8 +56,6 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: Intel i3-2350M (4) @ 2.300GHz
             .-/+oossssoo+/-.
 ```
 * [ ] `Google Coral TPU` - As encouraged from [here](https://docs.frigate.video/hardware/#google-coral-tpu), feel free to try this out. But my guide will not cover on how to setup and use this. My setup is running without this and I am very happy with the result; meaning, I do not see the need, and it is too expensive for me at the moment (caused by supply shortage).
-
-FINALLY, please note that my setup **only has 1 camera**; so beef things up if necessary for your case.
 # 3. Software
 ## 3.1 Installs
 ### 3.1.1 Frigate
