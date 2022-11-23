@@ -123,7 +123,9 @@ motion:
   improve_contrast: False
 ```
 ### 3.2.2 Install
-I installed Frigate via `Docker` and starts it with `docker compose --file /home/ubuntuuser/Downloads/frigate-compose.yaml up --detach` where `frigate-compose.yaml` is as below
+I installed Frigate on the mentioned old laptop via `Docker` and starts it with `docker compose --file /home/ubuntuuser/Downloads/frigate-compose.yaml up --detach` where `frigate-compose.yaml` is as below.
+
+Also, as mentioned, I am using an external USB harddrive (plugged into the old laptop) for video recordings storage. If you are running Linux, look into [`fstab`](https://www.redhat.com/sysadmin/etc-fstab) regarding mounting; your `/etc/fstab` would have something like this `UUID=99c6a3d7-392c-41cf-8dbe-4c93f8abce0d  /home/ubuntuuser/Downloads/cameraStuff    ext4    defaults,errors=remount-ro 0 1`
 ```yaml
 version: "3.9"
 services:
@@ -151,6 +153,12 @@ services:
       - "1935:1935" # RTMP feeds
 ```
 ## 3.3 Home Assistant
-For my setup to work, I found out the hard way that the Home Assistant flavor `MUST` support `Add-ons`. So, from [here](https://www.home-assistant.io/installation/#compare-installation-methods), we only have 2 installation methods of: `OS` or `Supervised`
+Installing and configuring Home Assistant.
+### 3.3.1 Installing
+For my setup to work, I found out the hard way that the Home Assistant flavor installed `MUST` support `Add-ons`. So, from [here](https://www.home-assistant.io/installation/#compare-installation-methods), we only have 2 installation methods of: `OS` or `Supervised`
 
-I went with sthe [`Supervised`](https://www.home-assistant.io/installation/linux) option
+I used the `Supervised` option to install Home Assistant on my old laptop. See [here](https://www.home-assistant.io/installation/linux)
+### 3.3.2 Configuring
+TODO
+## 3.4 Mopidy
+TODO
